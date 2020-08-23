@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A012134324F290D7009F8DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012134224F290D7009F8DB5 /* AppDelegate.swift */; };
+		A012134524F290D7009F8DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012134424F290D7009F8DB5 /* SceneDelegate.swift */; };
+		A012134724F290D7009F8DB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012134624F290D7009F8DB5 /* ContentView.swift */; };
+		A012134924F290D9009F8DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A012134824F290D9009F8DB5 /* Assets.xcassets */; };
+		A012134C24F290D9009F8DB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A012134B24F290D9009F8DB5 /* Preview Assets.xcassets */; };
+		A012134F24F290D9009F8DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A012134D24F290D9009F8DB5 /* LaunchScreen.storyboard */; };
+		A012135A24F290DA009F8DB5 /* Esperanta_KlavaroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012135924F290DA009F8DB5 /* Esperanta_KlavaroTests.swift */; };
+		A012136524F290DA009F8DB5 /* Esperanta_KlavaroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012136424F290DA009F8DB5 /* Esperanta_KlavaroUITests.swift */; };
+		A012137924F2917C009F8DB5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012137824F2917C009F8DB5 /* KeyboardViewController.swift */; };
+		A012137D24F2917C009F8DB5 /* Esperanto Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A012137624F2917C009F8DB5 /* Esperanto Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A012135624F290DA009F8DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A012133724F290D7009F8DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A012133E24F290D7009F8DB5;
+			remoteInfo = "Esperanta Klavaro";
+		};
+		A012136124F290DA009F8DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A012133724F290D7009F8DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A012133E24F290D7009F8DB5;
+			remoteInfo = "Esperanta Klavaro";
+		};
+		A012137B24F2917C009F8DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A012133724F290D7009F8DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A012137524F2917C009F8DB5;
+			remoteInfo = "Esperanto Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A012138124F2917C009F8DB5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A012137D24F2917C009F8DB5 /* Esperanto Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A012133F24F290D7009F8DB5 /* Esperanta Klavaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Esperanta Klavaro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A012134224F290D7009F8DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A012134424F290D7009F8DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A012134624F290D7009F8DB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A012134824F290D9009F8DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A012134B24F290D9009F8DB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A012134E24F290D9009F8DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A012135024F290D9009F8DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A012135524F290DA009F8DB5 /* Esperanta KlavaroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Esperanta KlavaroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A012135924F290DA009F8DB5 /* Esperanta_KlavaroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esperanta_KlavaroTests.swift; sourceTree = "<group>"; };
+		A012135B24F290DA009F8DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A012136024F290DA009F8DB5 /* Esperanta KlavaroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Esperanta KlavaroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A012136424F290DA009F8DB5 /* Esperanta_KlavaroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esperanta_KlavaroUITests.swift; sourceTree = "<group>"; };
+		A012136624F290DA009F8DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A012137624F2917C009F8DB5 /* Esperanto Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Esperanto Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A012137824F2917C009F8DB5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A012137A24F2917C009F8DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A012133C24F290D7009F8DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012135224F290DA009F8DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012135D24F290DA009F8DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012137324F2917C009F8DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A012133624F290D7009F8DB5 = {
+			isa = PBXGroup;
+			children = (
+				A012134124F290D7009F8DB5 /* Esperanta Klavaro */,
+				A012135824F290DA009F8DB5 /* Esperanta KlavaroTests */,
+				A012136324F290DA009F8DB5 /* Esperanta KlavaroUITests */,
+				A012137724F2917C009F8DB5 /* Esperanto Keyboard */,
+				A012134024F290D7009F8DB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A012134024F290D7009F8DB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A012133F24F290D7009F8DB5 /* Esperanta Klavaro.app */,
+				A012135524F290DA009F8DB5 /* Esperanta KlavaroTests.xctest */,
+				A012136024F290DA009F8DB5 /* Esperanta KlavaroUITests.xctest */,
+				A012137624F2917C009F8DB5 /* Esperanto Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A012134124F290D7009F8DB5 /* Esperanta Klavaro */ = {
+			isa = PBXGroup;
+			children = (
+				A012134224F290D7009F8DB5 /* AppDelegate.swift */,
+				A012134424F290D7009F8DB5 /* SceneDelegate.swift */,
+				A012134624F290D7009F8DB5 /* ContentView.swift */,
+				A012134824F290D9009F8DB5 /* Assets.xcassets */,
+				A012134D24F290D9009F8DB5 /* LaunchScreen.storyboard */,
+				A012135024F290D9009F8DB5 /* Info.plist */,
+				A012134A24F290D9009F8DB5 /* Preview Content */,
+			);
+			path = "Esperanta Klavaro";
+			sourceTree = "<group>";
+		};
+		A012134A24F290D9009F8DB5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A012134B24F290D9009F8DB5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A012135824F290DA009F8DB5 /* Esperanta KlavaroTests */ = {
+			isa = PBXGroup;
+			children = (
+				A012135924F290DA009F8DB5 /* Esperanta_KlavaroTests.swift */,
+				A012135B24F290DA009F8DB5 /* Info.plist */,
+			);
+			path = "Esperanta KlavaroTests";
+			sourceTree = "<group>";
+		};
+		A012136324F290DA009F8DB5 /* Esperanta KlavaroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A012136424F290DA009F8DB5 /* Esperanta_KlavaroUITests.swift */,
+				A012136624F290DA009F8DB5 /* Info.plist */,
+			);
+			path = "Esperanta KlavaroUITests";
+			sourceTree = "<group>";
+		};
+		A012137724F2917C009F8DB5 /* Esperanto Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A012137824F2917C009F8DB5 /* KeyboardViewController.swift */,
+				A012137A24F2917C009F8DB5 /* Info.plist */,
+			);
+			path = "Esperanto Keyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A012133E24F290D7009F8DB5 /* Esperanta Klavaro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A012136924F290DA009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanta Klavaro" */;
+			buildPhases = (
+				A012133B24F290D7009F8DB5 /* Sources */,
+				A012133C24F290D7009F8DB5 /* Frameworks */,
+				A012133D24F290D7009F8DB5 /* Resources */,
+				A012138124F2917C009F8DB5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A012137C24F2917C009F8DB5 /* PBXTargetDependency */,
+			);
+			name = "Esperanta Klavaro";
+			productName = "Esperanta Klavaro";
+			productReference = A012133F24F290D7009F8DB5 /* Esperanta Klavaro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A012135424F290DA009F8DB5 /* Esperanta KlavaroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A012136C24F290DA009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanta KlavaroTests" */;
+			buildPhases = (
+				A012135124F290DA009F8DB5 /* Sources */,
+				A012135224F290DA009F8DB5 /* Frameworks */,
+				A012135324F290DA009F8DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A012135724F290DA009F8DB5 /* PBXTargetDependency */,
+			);
+			name = "Esperanta KlavaroTests";
+			productName = "Esperanta KlavaroTests";
+			productReference = A012135524F290DA009F8DB5 /* Esperanta KlavaroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A012135F24F290DA009F8DB5 /* Esperanta KlavaroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A012136F24F290DA009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanta KlavaroUITests" */;
+			buildPhases = (
+				A012135C24F290DA009F8DB5 /* Sources */,
+				A012135D24F290DA009F8DB5 /* Frameworks */,
+				A012135E24F290DA009F8DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A012136224F290DA009F8DB5 /* PBXTargetDependency */,
+			);
+			name = "Esperanta KlavaroUITests";
+			productName = "Esperanta KlavaroUITests";
+			productReference = A012136024F290DA009F8DB5 /* Esperanta KlavaroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A012137524F2917C009F8DB5 /* Esperanto Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A012137E24F2917C009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanto Keyboard" */;
+			buildPhases = (
+				A012137224F2917C009F8DB5 /* Sources */,
+				A012137324F2917C009F8DB5 /* Frameworks */,
+				A012137424F2917C009F8DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Esperanto Keyboard";
+			productName = "Esperanto Keyboard";
+			productReference = A012137624F2917C009F8DB5 /* Esperanto Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A012133724F290D7009F8DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Victor Williams";
+				TargetAttributes = {
+					A012133E24F290D7009F8DB5 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					A012135424F290DA009F8DB5 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = A012133E24F290D7009F8DB5;
+					};
+					A012135F24F290DA009F8DB5 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = A012133E24F290D7009F8DB5;
+					};
+					A012137524F2917C009F8DB5 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = A012133A24F290D7009F8DB5 /* Build configuration list for PBXProject "Esperanta Klavaro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A012133624F290D7009F8DB5;
+			productRefGroup = A012134024F290D7009F8DB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A012133E24F290D7009F8DB5 /* Esperanta Klavaro */,
+				A012135424F290DA009F8DB5 /* Esperanta KlavaroTests */,
+				A012135F24F290DA009F8DB5 /* Esperanta KlavaroUITests */,
+				A012137524F2917C009F8DB5 /* Esperanto Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A012133D24F290D7009F8DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A012134F24F290D9009F8DB5 /* LaunchScreen.storyboard in Resources */,
+				A012134C24F290D9009F8DB5 /* Preview Assets.xcassets in Resources */,
+				A012134924F290D9009F8DB5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012135324F290DA009F8DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012135E24F290DA009F8DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012137424F2917C009F8DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A012133B24F290D7009F8DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A012134324F290D7009F8DB5 /* AppDelegate.swift in Sources */,
+				A012134524F290D7009F8DB5 /* SceneDelegate.swift in Sources */,
+				A012134724F290D7009F8DB5 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012135124F290DA009F8DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A012135A24F290DA009F8DB5 /* Esperanta_KlavaroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012135C24F290DA009F8DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A012136524F290DA009F8DB5 /* Esperanta_KlavaroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A012137224F2917C009F8DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A012137924F2917C009F8DB5 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A012135724F290DA009F8DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A012133E24F290D7009F8DB5 /* Esperanta Klavaro */;
+			targetProxy = A012135624F290DA009F8DB5 /* PBXContainerItemProxy */;
+		};
+		A012136224F290DA009F8DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A012133E24F290D7009F8DB5 /* Esperanta Klavaro */;
+			targetProxy = A012136124F290DA009F8DB5 /* PBXContainerItemProxy */;
+		};
+		A012137C24F2917C009F8DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A012137524F2917C009F8DB5 /* Esperanto Keyboard */;
+			targetProxy = A012137B24F2917C009F8DB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A012134D24F290D9009F8DB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A012134E24F290D9009F8DB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A012136724F290DA009F8DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A012136824F290DA009F8DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A012136A24F290DA009F8DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Esperanta Klavaro/Preview Content\"";
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Esperanta Klavaro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-Klavaro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A012136B24F290DA009F8DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Esperanta Klavaro/Preview Content\"";
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Esperanta Klavaro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-Klavaro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A012136D24F290DA009F8DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				INFOPLIST_FILE = "Esperanta KlavaroTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-KlavaroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esperanta Klavaro.app/Esperanta Klavaro";
+			};
+			name = Debug;
+		};
+		A012136E24F290DA009F8DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				INFOPLIST_FILE = "Esperanta KlavaroTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-KlavaroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esperanta Klavaro.app/Esperanta Klavaro";
+			};
+			name = Release;
+		};
+		A012137024F290DA009F8DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				INFOPLIST_FILE = "Esperanta KlavaroUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-KlavaroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Esperanta Klavaro";
+			};
+			name = Debug;
+		};
+		A012137124F290DA009F8DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				INFOPLIST_FILE = "Esperanta KlavaroUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-KlavaroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Esperanta Klavaro";
+			};
+			name = Release;
+		};
+		A012137F24F2917C009F8DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				INFOPLIST_FILE = "Esperanto Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-Klavaro.Esperanto-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A012138024F2917C009F8DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPSLDB35D4;
+				INFOPLIST_FILE = "Esperanto Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vaporjawn.Esperanta-Klavaro.Esperanto-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A012133A24F290D7009F8DB5 /* Build configuration list for PBXProject "Esperanta Klavaro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A012136724F290DA009F8DB5 /* Debug */,
+				A012136824F290DA009F8DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A012136924F290DA009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanta Klavaro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A012136A24F290DA009F8DB5 /* Debug */,
+				A012136B24F290DA009F8DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A012136C24F290DA009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanta KlavaroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A012136D24F290DA009F8DB5 /* Debug */,
+				A012136E24F290DA009F8DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A012136F24F290DA009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanta KlavaroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A012137024F290DA009F8DB5 /* Debug */,
+				A012137124F290DA009F8DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A012137E24F2917C009F8DB5 /* Build configuration list for PBXNativeTarget "Esperanto Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A012137F24F2917C009F8DB5 /* Debug */,
+				A012138024F2917C009F8DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A012133724F290D7009F8DB5 /* Project object */;
+}
