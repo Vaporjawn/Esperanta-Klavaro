@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,12 @@
 		A012136524F290DA009F8DB5 /* Esperanta_KlavaroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012136424F290DA009F8DB5 /* Esperanta_KlavaroUITests.swift */; };
 		A012137924F2917C009F8DB5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012137824F2917C009F8DB5 /* KeyboardViewController.swift */; };
 		A012137D24F2917C009F8DB5 /* Esperanto Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A012137624F2917C009F8DB5 /* Esperanto Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A0ACD8F12517130C008B81BE /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0ACD8F02517130C008B81BE /* KeyboardKit */; };
+		A0B975852517199A0044CCA2 /* Keyboards in Resources */ = {isa = PBXBuildFile; fileRef = A0B975842517199A0044CCA2 /* Keyboards */; };
+		A0B9758B251719D50044CCA2 /* DemoKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9758A251719D50044CCA2 /* DemoKeyboardActionHandler.swift */; };
+		A0B9759125171AB40044CCA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B9759025171AB40044CCA2 /* Main.storyboard */; };
+		A0B9759725171AEE0044CCA2 /* Shared in Resources */ = {isa = PBXBuildFile; fileRef = A0B9759625171AEE0044CCA2 /* Shared */; };
+		A0B9759D25171B1E0044CCA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9759C25171B1E0044CCA2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,11 @@
 		A012137624F2917C009F8DB5 /* Esperanto Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Esperanto Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A012137824F2917C009F8DB5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		A012137A24F2917C009F8DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B975842517199A0044CCA2 /* Keyboards */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Keyboards; sourceTree = "<group>"; };
+		A0B9758A251719D50044CCA2 /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		A0B9759025171AB40044CCA2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A0B9759625171AEE0044CCA2 /* Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shared; sourceTree = "<group>"; };
+		A0B9759C25171B1E0044CCA2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Library/Developer/Xcode/DerivedData/Esperanta_Klavaro-ahteybshtrhxqbgyiayuhjepqyva/SourcePackages/checkouts/KeyboardKit/KeyboardKitDemo/ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0ACD8F12517130C008B81BE /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,10 +148,13 @@
 			children = (
 				A012134224F290D7009F8DB5 /* AppDelegate.swift */,
 				A012134424F290D7009F8DB5 /* SceneDelegate.swift */,
+				A0B9759625171AEE0044CCA2 /* Shared */,
 				A012134624F290D7009F8DB5 /* ContentView.swift */,
 				A012134824F290D9009F8DB5 /* Assets.xcassets */,
+				A0B9759025171AB40044CCA2 /* Main.storyboard */,
 				A012134D24F290D9009F8DB5 /* LaunchScreen.storyboard */,
 				A012135024F290D9009F8DB5 /* Info.plist */,
+				A0B9759C25171B1E0044CCA2 /* ViewController.swift */,
 				A012134A24F290D9009F8DB5 /* Preview Content */,
 			);
 			path = "Esperanta Klavaro";
@@ -174,7 +189,9 @@
 		A012137724F2917C009F8DB5 /* Esperanto Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				A0B975842517199A0044CCA2 /* Keyboards */,
 				A012137824F2917C009F8DB5 /* KeyboardViewController.swift */,
+				A0B9758A251719D50044CCA2 /* DemoKeyboardActionHandler.swift */,
 				A012137A24F2917C009F8DB5 /* Info.plist */,
 			);
 			path = "Esperanto Keyboard";
@@ -198,6 +215,9 @@
 				A012137C24F2917C009F8DB5 /* PBXTargetDependency */,
 			);
 			name = "Esperanta Klavaro";
+			packageProductDependencies = (
+				A0ACD8F02517130C008B81BE /* KeyboardKit */,
+			);
 			productName = "Esperanta Klavaro";
 			productReference = A012133F24F290D7009F8DB5 /* Esperanta Klavaro.app */;
 			productType = "com.apple.product-type.application";
@@ -262,7 +282,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Victor Williams";
 				TargetAttributes = {
 					A012133E24F290D7009F8DB5 = {
@@ -290,6 +310,9 @@
 				Base,
 			);
 			mainGroup = A012133624F290D7009F8DB5;
+			packageReferences = (
+				A0ACD8EF2517130C008B81BE /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			productRefGroup = A012134024F290D7009F8DB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,9 +330,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B9759725171AEE0044CCA2 /* Shared in Resources */,
 				A012134F24F290D9009F8DB5 /* LaunchScreen.storyboard in Resources */,
 				A012134C24F290D9009F8DB5 /* Preview Assets.xcassets in Resources */,
 				A012134924F290D9009F8DB5 /* Assets.xcassets in Resources */,
+				A0B9759125171AB40044CCA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B975852517199A0044CCA2 /* Keyboards in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +369,7 @@
 			files = (
 				A012134324F290D7009F8DB5 /* AppDelegate.swift in Sources */,
 				A012134524F290D7009F8DB5 /* SceneDelegate.swift in Sources */,
+				A0B9759D25171B1E0044CCA2 /* ViewController.swift in Sources */,
 				A012134724F290D7009F8DB5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B9758B251719D50044CCA2 /* DemoKeyboardActionHandler.swift in Sources */,
 				A012137924F2917C009F8DB5 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +457,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -489,6 +518,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -730,6 +760,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0ACD8EF2517130C008B81BE /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0ACD8F02517130C008B81BE /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0ACD8EF2517130C008B81BE /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A012133724F290D7009F8DB5 /* Project object */;
 }

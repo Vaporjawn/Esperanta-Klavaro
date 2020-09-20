@@ -7,58 +7,88 @@
 //
 
 import UIKit
-class UISplitViewController : UIViewController{
-    
-}
+import KeyboardKit
 
-class KeyboardViewController: UIInputViewController {
-
-    @IBOutlet var nextKeyboardButton: UIButton!
+/**
+ This UIKit-based demo keyboard demonstrates how to create a
+ keyboard extension using `KeyboardKit` and `UIKit`.
+ 
+ This keyboard sends text and emoji inputs to the text proxy,
+ copies tapped images to the device's pasteboard, saves long
+ pressed images to photos etc. It also adds an auto complete
+ toolbar that provides fake suggestions for the current word.
+ 
+ `IMPORTANT` To use this keyboard, you must enable it in the
+ system keyboard settings ("Settings/General/Keyboards") and
+ give it full access, which is unfortunately required to use
+ some features like haptic and audio feedback, let it access
+ the user's photos etc.
+ 
+ If you want to use these features in your own app, you must
+ add `RequestsOpenAccess` to the extension's `Info.plist` to
+ make it possible for the user to enable full access. If you
+ want to allow the keyboard to access the user's photo album,
+ you must add the `NSPhotoLibraryAddUsageDescription` key to
+ the **host** application's `Info.plist`. Have a look at the
+ demo app and extension and copy the parts that you need.
+ */
+class KeyboardViewController: KeyboardInputViewController {
     
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-        
-        // Add custom view sizing constraints here
-    }
+    
+    // MARK: - View Controller Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Perform custom UI setup here
-        self.nextKeyboardButton = UIButton(type: .system)
-        
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        
-        self.view.addSubview(self.nextKeyboardButton)
-        
-        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        context.actionHandler = DemoKeyboardActionHandler(inputViewController: self)
     }
     
-    override func viewWillLayoutSubviews() {
-        self.nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
-        super.viewWillLayoutSubviews()
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        setupKeyboard()
     }
     
-    override func textWillChange(_ textInput: UITextInput?) {
-        // The app is about to change the document's contents. Perform any preparation here.
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        setupKeyboard(for: size)
     }
     
-    override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
-        
-        var textColor: UIColor
-        let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-            textColor = UIColor.white
-        } else {
-            textColor = UIColor.black
+    
+    // MARK: - Keyboard Functionality
+    
+    override func setupKeyboard() {
+        setupKeyboard(for: view.bounds.size)
+    }
+    
+    
+    // MARK: - Properties
+    
+    let alerter = ToastAlert()
+    
+    var emojiKeyboard: EmojiKeyboard?
+    var emojiCategoryTitleLabel = UILabel()
+    var emojiCollectionView: KeyboardButtonRowCollectionView!
+    var emojiLabelUpdateAction = {}
+    
+    
+    // MARK: - Autocomplete
+    
+    lazy var autocompleteProvider = DemoAutocompleteSuggestionProvider()
+    
+    lazy var autocompleteToolbar: AutocompleteToolbarView = {
+        AutocompleteToolbarView(textDocumentProxy: textDocumentProxy)
+    }()
+    
+    override func performAutocomplete() {
+        guard let word = textDocumentProxy.currentWord else { return resetAutocomplete() }
+        autocompleteProvider.autocompleteSuggestions(for: word) { [weak self] result in
+            switch result {
+            case .failure(let error): print(error.localizedDescription)
+            case .success(let result): self?.autocompleteToolbar.update(with: result)
+            }
         }
-        self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
-
+    
+    override func resetAutocomplete() {
+        autocompleteToolbar.reset()
+    }
 }
